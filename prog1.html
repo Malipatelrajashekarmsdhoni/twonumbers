@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: grid;
+        
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap:wrap;
+            padding: 140px;
+            padding-right: 150px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container"></div>
+    
+
+
+    <table>
+
+        <tr>
+            <td><h1> CALUCULATOR</h1></td>
+        </tr>
+        <tr>
+            <td>enter number</td>
+            <td><input type="number" id="num1" ></td>
+            <td></td>
+            <td></td>
+
+        </tr>
+        <tr>
+            <td>enter number </td>
+            <td><input type="number" id="num2"></td>
+            <td></td>
+            <td></td>
+
+           
+        </tr>
+        <tr>
+            <td><input type="button" value="add" style="background-color:rgb(235, 200, 59)" onclick="add()"></td>
+            <td><input type="button" value="sub" style="background-color:rgb(235, 200, 59)" onclick="sub()"></td>
+
+        </tr>
+        <tr>
+            <td><input type="button" value="mul" style="background-color:rgb(235, 200, 59)" onclick="mul()"></td>
+            <td><input type="button" value="div" style="background-color:rgb(235, 200, 59)" onclick="div()"></td>
+        
+            
+        </tr>
+        <tr>
+            <td colspan="2"><h1 id="z"></h1></td>
+        </tr>
+    </table>
+    <script>
+       
+        console.log("hi i am console");
+
+        //alert("hello moring");
+
+        /*function a(){
+
+            if(ture)
+        {
+            var x=10;
+            console.log("x");
+        }
+        }*/
+
+        
+            /*var i=8;
+            if(i%2==0&&i>0){
+                document.write("a is a even number and positive number");
+            }
+            else{
+                document.write("b is odd number and ");
+            }
+var i=5;
+
+switch(i){
+           
+                case 1:{
+                    document.write("monady");
+                    break;
+                }
+                case 2:{
+                    document.write("monady");
+                    break;
+                }
+                case 3:{
+                    document.write("monady");
+                    break;
+                }
+                case 4:{
+                    document.write("monady");
+                    break;
+                }
+                case 5:{
+                    document.write("thursday");
+                    break;
+                }
+                case 6:{
+                    document.write("monady");
+                    break;
+                }
+                case 7:{
+                    document.write("monady");
+                    break;
+                }
+                default:{
+                    document.write("invalid");
+                    break;
+                }
+}
+const x=[1,2,3,4,5];*/
+/*for(var i=0;i<=10;i++){
+    var y=5*i;
+    document.write("<br>sware is"+y+"");
+}
+/*const x=[1,2,3,4,5];
+let i=0;
+while(i<x.length){
+    let y=x[i]*x[i];
+    document.write("<br>sware is"+y+"");
+    i++
+    
+}*/
+function add(){
+    var x=parseInt(document.getElementById("num1").value);
+    var y=parseInt(document.getElementById("num2").value);
+    var rese=x+y;
+    console.log(rese);
+    document.getElementById("z").innerHTML="addition of two numbers is " +rese;
+}
+function sub(){
+    var x=parseInt(document.getElementById("num1").value);
+    var y=parseInt(document.getElementById("num2").value);
+    var rese=x-y;
+    console.log(rese);
+    document.getElementById("z").innerHTML="addition of two numbers is " +rese;
+}
+function mul(){
+    var x=parseInt(document.getElementById("num1").value);
+    var y=parseInt(document.getElementById("num2").value);
+    var rese=x*y;
+    console.log(rese);
+    document.getElementById("z").innerHTML="addition of two numbers is " +rese;
+}
+function div(){
+    var x=parseInt(document.getElementById("num1").value);
+    var y=parseInt(document.getElementById("num2").value);
+    var rese=x/y;
+    console.log(rese);
+    document.getElementById("z").innerHTML="addition of two numbers is " +rese;
+}
+
+        
+    </script>
+    
+</body>
+</html>
